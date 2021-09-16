@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Samura2.0 News</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+    
+            li {
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+    
+            li a:hover {
+                background-color: #111;
+            }
+        </style>
+    </head>
+    <style>
+        body{
+            background: url("https://www.webdesignerdepot.com/cdn-origin/uploads/2013/07/hermes.gif") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        body::-webkit-scrollbar 
+        {
+            display: none;
+        }
+        h1
+        {
+            font-size: 55px;
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+        .sports
+        {
+            top: 360px;
+            left: -50px;
+        }
+
+        .top
+        {
+            top: 360px;
+            right: 0px;
+        }
+        .tech
+        {
+            top: 360px;
+            right: 0px;
+        }
+
+    </style>
+
+    <body>
+
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
+
+        <center>
+            <h1 style="color: rgb(207, 224, 240);">News</h1>
+        </center>
+
+        <div class ="sports">
+            <rssapp-wall id="XMB1mlT5Xy4DkvUa"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+        </div>
+
+        <div class="top">
+            <rssapp-wall id="QWUszMwpgPqzNgrR"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+        </div>
+
+        <div class="tech">
+            <rssapp-wall id="UEJ90tMc2iuuzNOq"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+        </div>
+
+    </body>
+</html>
