@@ -1,26 +1,26 @@
 <html>
     <head>
-        <title>Samura2.0 News</title>
+        <title>Spartan</title>
         <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-    
-            li {
-                float: left;
-            }
-    
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
     
             li a:hover {
                 background-color: #111;
@@ -47,7 +47,27 @@
             text-align: center;
         }
 
+        .footer {
 
+            bottom: 1vh;
+            left: 0;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #393939;
+        }
+        .proj1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            padding: 15px;
+        }
+
+        .proj2{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            padding: 45px;
+        }
 
     </style>
 
@@ -60,10 +80,35 @@
             <li><a href="project.html">Projects</a></li>
         </ul>
 
+
+        
+
         <center>
-            <h1 style="color: rgb(207, 224, 240);">Coming Soon!</h1>
+            <h1 style="color: rgb(207, 224, 240);">Projects</h1>
+            <h2 style="color: rgb(207, 224, 240);">Here is a list of all completed projects and project ideas</h2>
+
         </center>
 
+        <div class="proj1">
+            <center>
+                <a style="color: rgb(207, 224, 240);" href="https://www.thingiverse.com/thing:5139186" target="_blank">Arduino based Numpad</a>
+            </center>
+            <center>
+            <img src="data:image/jpeg;base64,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" alt="Italian Trulli">
+            </center>
+        </div>
+
+        <div class="proj2">
+            <center>
+                <a style="color: rgb(207, 224, 240);" href="https://www.tiktok.com/@thatguytrico?" target="_blank">My Tik Tok</a>
+            </center>
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@thatguytrico/video/6946633896360480005" data-video-id="6946633896360480005" style="max-width: 500px;min-width: 500px;" > <section> <a target="_blank" title="@thatguytrico" href="https://www.tiktok.com/@thatguytrico">@thatguytrico</a> <p>Repost cus I feel like it needs more love <a title="openingday" target="_blank" href="https://www.tiktok.com/tag/openingday">##openingday</a> <a title="braves" target="_blank" href="https://www.tiktok.com/tag/braves">##braves</a> <a title="baseball" target="_blank" href="https://www.tiktok.com/tag/baseball">##baseball</a></p> <a target="_blank" title="♬ original sound - Drew" href="https://www.tiktok.com/music/original-sound-6946633809433660165">♬ original sound - Drew</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
+        </div>
+
+        <div class="footer">
+            Made Horribly by Drew Moss © 2021 
+        </div>
 
     </body>
 </html>

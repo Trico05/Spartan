@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Samura2.0 News</title>
+        <title>Spartan</title>
         <style>
         ul {
             list-style-type: none;
@@ -27,6 +27,7 @@
             color: black;
         }
         </style>
+        <link rel="icon" href="https://www.iconpacks.net/icons/2/free-spartan-helmet-icon-2755-thumb.png">
     </head>
     <style>
         body{
@@ -48,12 +49,58 @@
             text-align: center;
         }
 
+        .buttonSP
+        {
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 65px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            position: fixed;
+            display: block;
+            top: 380;
+            right: 805;
+            width: 250;
+            height: 215;
+            font-family: "Courier New", monospace;
+            text-decoration: none;
+
+        }
+        .buttonSP 
+        {
+            background-color:rgb(207, 224, 240) ;
+            color: black;
+            border-radius: 15px;
+            
+        }
+        .buttonSP:hover {
+                background-color: grey;
+                color:black;
+            }
+        
+        .footer {
+            position: absolute;
+            bottom: 1vh;
+            left: 0;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #393939;
+        }
+
 
 
     </style>
 
-    <body>
 
+
+
+
+    <body>
+ 
         <ul>
             <li><a class="active" href="home.html">Home</a></li>
             <li><a href="news.html">News</a></li>
@@ -61,10 +108,25 @@
             <li><a href="project.html">Projects</a></li>
         </ul>
 
+
         <center>
             <h1 style="color: rgb(207, 224, 240);">Welcome!</h1>
         </center>
 
+        <div class="footer">
+            Made Horribly by Drew Moss © 2021 
+        </div>
 
+        <a class="buttonSP" onclick="check()" style="Color: black">Home Page</a>
+        <script>
+            function check(){
+                var a = confirm("This website sucks are you sure you want to see the horrors");
+                if(a == true){
+                    window.open("home.html", "_self");
+                }else{
+                    alert("Good Choice");
+                }
+            }
+        </script>
     </body>
 </html>
