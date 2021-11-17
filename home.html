@@ -1,0 +1,366 @@
+<html>
+    <head>
+        <title>Samurai v2</title>
+        <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+    </style>
+    </head>
+    <style>
+        body{
+            background: url("https://images.wallpapersden.com/image/download/windows-10-clean-dark_a2htamaUmZqaraWkpJRmbmdlrWZlbWU.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+
+        }
+
+        body::-webkit-scrollbar 
+        {
+            display: none;
+        }
+
+        h1
+        {
+            font-size: 55px;
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+        h2
+        {
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            top: 90px;
+        }
+
+        .weather
+        {
+            position: fixed;
+            width: 500px;
+            top: 90px;
+            left: 0px;
+
+        }
+
+        .clock
+        {
+            position: fixed;
+            width: 500px;
+            left: 0px;
+            top: 300px;
+            font-size: 12;
+ 
+        }
+
+        .calendar{
+            position: fixed;
+            width: 500px;
+            left: 0px;
+            top: 350px;
+
+        }
+
+        .spotify
+        {
+            position: fixed;
+            width: 500px;
+            top: 90px;
+            right: 0px;
+        }
+
+        .discord
+        {
+            position: fixed;
+            top: 480;
+            right: 0px;
+
+        }
+
+
+
+        .buttonSP
+        {
+            border: none;
+            color: blue;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 45px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            position: fixed;
+            display: block;
+            top: 480;
+            right: 260;
+            width: 170;
+            height: 215;
+            font-family: "Courier New", monospace;
+
+        }
+        .buttonSP 
+        {
+            background-color: black ;
+            color: #F1EEE5;
+            border: 2px solid #CFE0F0;
+        }
+
+
+
+
+
+
+
+        .button{
+                border: none;
+                color: blue;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: fixed;
+                display: block;
+                top: 800;
+                right: 0;
+                width: 100;
+            }
+            .button {
+                background-color: black ;
+                color: #F1EEE5;
+                border: 2px solid #F1EEE5;
+                }
+            .button:hover {
+                background-color: grey;
+            }
+        
+            .button2{
+                border: none;
+                color: blue;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: fixed;
+                top: 850;
+                right: 0;
+                width: 100;
+            }
+            .button2 
+            {
+                background-color: black ;
+                color: #F1EEE5;
+                border: 2px solid #F1EEE5;
+                }
+            .button2:hover {
+                background-color: grey;
+                color:black;
+            }
+
+            .button3{
+                border: none;
+                color: blue;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: fixed;
+                top: 850;
+                right: 165;
+                width: 100;
+            }
+            .button3 
+            {
+                background-color: black ;
+                color: #F1EEE5;
+                border: 2px solid #F1EEE5;
+                }
+            .button3:hover {
+                background-color: grey;
+                color:black;
+            }
+
+            .button4{
+                border: none;
+                color: blue;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: fixed;
+                top: 800;
+                right: 165;
+                width: 100;
+            }
+            .button4 
+            {
+                background-color: black ;
+                color: #F1EEE5;
+                border: 2px solid #F1EEE5;
+                }
+            .button4:hover {
+                background-color: grey;
+                color:black;
+            }
+
+            .button5{
+                border: none;
+                color: blue;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: fixed;
+                top: 800;
+                right: 330;
+                width: 100;
+            }
+            .button5 
+            {
+                background-color: black ;
+                color: #F1EEE5;
+                border: 2px solid #F1EEE5;
+                }
+            .button5:hover {
+                background-color: grey;
+                color:black;
+            }
+
+            .button6{
+                border: none;
+                color: blue;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: fixed;
+                top: 850;
+                right: 330;
+                width: 100;
+            }
+            .button6 
+            {
+                background-color: black ;
+                color: #F1EEE5;
+                border: 2px solid #F1EEE5;
+                }
+            .button6:hover {
+                background-color: grey;
+                color:black;
+            }
+        
+            img{
+                border-radius: 8px;
+            }
+
+
+        
+    </style>
+
+    <body>
+
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
+        <center>
+        <h1 style="color: rgb(207, 224, 240);">Samurai 2.0</h1>
+        </center>
+
+
+        <a class="buttonSP" onclick="schoolPack()" style="Color: #F1EEE5">School Pack</a>
+        <script>
+            function schoolPack(){
+                window.open("https://portals.veracross.com/woodward/student", '_blank').focus();
+                window.open("https://mail.google.com/mail/u/2/#inbox", '_blank').focus();
+                window.open("https://classroom.google.com/u/2/h",'_blank').focus();
+                window.open("https://woodward.learning.powerschool.com/u/andrew.moss/portal#", '_blank').focus();
+                alert("Make sure that pop ups are not blocked in your browser!");
+            }
+        </script>
+
+
+        <a class="button" href="https://portals.veracross.com/woodward/student"target="_blank" style="Color: #F1EEE5">Vera Cross</a>
+        <a class="button2" href="https://woodward.learning.powerschool.com/do/account/login?src=%2Fu%2Fandrew.moss%2Fportal#"target="_blank" style="Color: #F1EEE5 ">PowerSchool</a>
+        <a class="button3" href="https://mail.google.com/mail/u/2/#inbox"target="_blank" style="Color: #F1EEE5 ">Gmail</a>
+        <a class="button4" href="https://drive.google.com/drive/u/2/my-drive"target="_blank" style="Color: #F1EEE5 ">Google Drive</a>
+        <a class="button5" href="https://www.youtube.com/"target="_blank" style="Color: #F1EEE5 ">Youtube</a>
+        <a class="button6" href="file:///C:/Samurai/Samurai/index.html"target="_blank" style="Color: #F1EEE5 ">Samurai</a>
+        
+        <div class="Calendar">
+            <iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%23616161&ctz=America%2FNew_York&showTitle=0&showDate=1&showPrint=0&showTabs=1&showTz=0&src=ZGNtb3NzMDVAZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%2333B679&color=%230B8043" style="border-width:0" width="500" height="500" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/33d75n84d39/atlanta/?unit=us" data-label_1="ATLANTA" data-label_2="WEATHER" data-font="Jura" data-icons="Climacons Animated" data-theme="dark" >ATLANTA WEATHER</a>
+            <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+        </div>
+
+        <div class="clock">
+            <iframe src="https://free.timeanddate.com/clock/i7zg95ns/n25/fn8/fs16/fc9ff/tc000/ahl/avb/ftb/pa8/tt0/tw1/th1/ta1/tb4" frameborder="0" width="500" height="52"></iframe>
+        </div>
+
+        <div class="spotify">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+
+        <div class="discord">
+            <iframe src="https://discord.com/widget?id=622243306973298719&theme=dark" width="250" height="250" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+
+
+
+    </body>
+</html>
